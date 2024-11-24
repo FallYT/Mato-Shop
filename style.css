@@ -27,7 +27,7 @@ header {
 }
 
 .logo {
-    width: 150px;
+    width: 150px; /* Adjust the size of your logo */
     height: auto;
 }
 
@@ -146,7 +146,6 @@ footer p {
 
 /* RESPONSIVE DESIGN FOR MOBILE */
 @media (max-width: 768px) {
-    /* Make header and logo stack vertically on smaller screens */
     .header-content {
         flex-direction: column;
         text-align: center;
@@ -156,7 +155,6 @@ footer p {
         margin: 10px 0;
     }
 
-    /* Adjust hero section */
     .hero {
         padding: 60px 0;
     }
@@ -169,20 +167,18 @@ footer p {
         font-size: 1rem;
     }
 
-    /* Adjust button */
     .cta-btn {
         padding: 12px 30px;
         font-size: 1rem;
     }
 
-    /* Stack product items vertically for smaller screens */
     .product-container {
         flex-direction: column;
         align-items: center;
     }
 
     .product-item {
-        width: 90%; /* Take full width on small screens */
+        width: 90%;
         margin-bottom: 20px;
     }
 
