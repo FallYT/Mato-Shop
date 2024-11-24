@@ -1,38 +1,54 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mato Shop</title>
-    <link rel="stylesheet" href="style.css">  <!-- Se till att den här länken är korrekt -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Mato Shop</h1>
+        <h1>Welcome to Mato Shop!</h1>
+        <p>The best virtual store for all your favorite items!</p>
     </header>
+
     <main>
-        <section class="welcome">
-            <h2>Välkommen till Mato Shop!</h2>
-            <p>Här hittar du de bästa produkterna till de bästa priserna.</p>
+        <section class="intro">
+            <h2>Get ready for some cool items</h2>
+            <p>Explore our unique collection of virtual goods.</p>
         </section>
+
         <section class="products">
-            <h2>Våra produkter</h2>
+            <h2>Our Products</h2>
             <div class="product-item">
-                <img src="https://via.placeholder.com/150" alt="Produkt 1">
-                <p>Produkt 1</p>
+                <img src="https://via.placeholder.com/150" alt="Product 1">
+                <p>Product 1</p>
             </div>
             <div class="product-item">
-                <img src="https://via.placeholder.com/150" alt="Produkt 2">
-                <p>Produkt 2</p>
+                <img src="https://via.placeholder.com/150" alt="Product 2">
+                <p>Product 2</p>
             </div>
             <div class="product-item">
-                <img src="https://via.placeholder.com/150" alt="Produkt 3">
-                <p>Produkt 3</p>
+                <img src="https://via.placeholder.com/150" alt="Product 3">
+                <p>Product 3</p>
             </div>
+        </section>
+
+        <section class="interactive">
+            <h2>Interact with our world</h2>
+            <p>Click the button to see magic happen!</p>
+            <button class="magic-button">Make Magic!</button>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 Mato Shop</p>
+        <p>&copy; 2024 Mato Shop | All Rights Reserved</p>
     </footer>
+
+    <script>
+        document.querySelector(".magic-button").addEventListener("click", function() {
+            alert("Magic happens!");
+        });
+    </script>
 </body>
 </html>

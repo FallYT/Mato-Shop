@@ -1,55 +1,115 @@
+/* Global styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: white;
+    background: linear-gradient(to right, #00C6FF, #F8FF00); /* Bright gradient background */
+    color: #fff;
     text-align: center;
-    padding: 20px;
+    overflow-x: hidden;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
+    color: #fff;
+    margin-top: 50px;
 }
 
-main {
-    padding: 20px;
+h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin: 30px 0;
 }
 
-.welcome {
-    text-align: center;
-    margin-bottom: 40px;
+p {
+    font-size: 1.2rem;
 }
 
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-bottom: 5px solid #FFD700;
+}
+
+/* Section styles */
+.main {
+    padding: 40px;
+}
+
+/* Products Section */
 .products {
     display: flex;
     justify-content: space-around;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
 .product-item {
-    text-align: center;
     background-color: #fff;
+    color: #333;
     padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .product-item img {
-    max-width: 100%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
     border-radius: 8px;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
+.product-item:hover {
+    transform: scale(1.1);
+}
+
+/* Interactive Section */
+.interactive {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.magic-button {
+    background-color: #FF4500; /* Orange color */
     color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.magic-button:hover {
+    transform: scale(1.1);
+    background-color: #FF6347; /* Lighter orange */
+}
+
+.magic-button:active {
+    transform: scale(1);
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
     position: fixed;
-    width: 100%;
     bottom: 0;
+    width: 100%;
+}
+
+/* Animation effects */
+@keyframes move {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+header h1, .magic-button {
+    animation: move 1.5s infinite ease-in-out;
 }
