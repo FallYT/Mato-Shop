@@ -1,99 +1,112 @@
-/* Global styles */
+/* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #00C6FF, #F8FF00); /* Bright gradient background */
+    background: linear-gradient(to right, #FF7F50, #FF1493); /* Bright, warm gradient */
     color: #fff;
     text-align: center;
     overflow-x: hidden;
+    animation: backgroundAnimation 10s infinite alternate;
+}
+
+/* Animating background gradient */
+@keyframes backgroundAnimation {
+    0% { background: linear-gradient(to right, #FF7F50, #FF1493); }
+    50% { background: linear-gradient(to right, #32CD32, #FFD700); }
+    100% { background: linear-gradient(to right, #1E90FF, #00FF7F); }
 }
 
 h1 {
     font-size: 4rem;
     color: #fff;
     margin-top: 50px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
 }
 
 h2 {
     font-size: 2rem;
     color: #fff;
     margin: 30px 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 p {
     font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
-/* Header Styles */
+/* Header Styling */
 header {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 40px;
     border-bottom: 5px solid #FFD700;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
 }
 
-/* Section styles */
-.main {
-    padding: 40px;
-}
-
-/* Products Section */
+/* Product Section */
 .products {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .product-item {
     background-color: #fff;
     color: #333;
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: bounce 1s infinite alternate;
 }
 
 .product-item img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
     margin-bottom: 10px;
-    border-radius: 8px;
+    transition: transform 0.3s ease;
 }
 
 .product-item:hover {
     transform: scale(1.1);
 }
 
-/* Interactive Section */
-.interactive {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
+.product-item:hover img {
+    transform: rotate(15deg);
 }
 
+/* Magic Button */
 .magic-button {
-    background-color: #FF4500; /* Orange color */
+    background-color: #32CD32;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 30px;
+    font-size: 1.5rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
-    font-size: 1.2rem;
-    transition: transform 0.2s, background-color 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.3s ease;
 }
 
 .magic-button:hover {
     transform: scale(1.1);
-    background-color: #FF6347; /* Lighter orange */
+    background-color: #FFD700;
 }
 
 .magic-button:active {
     transform: scale(1);
+    background-color: #FF6347;
 }
 
-/* Footer styles */
+/* Footer Styling */
 footer {
     background-color: #333;
     padding: 10px;
@@ -101,15 +114,12 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    text-align: center;
 }
 
-/* Animation effects */
-@keyframes move {
+/* Product Bounce Animation */
+@keyframes bounce {
     0% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
     100% { transform: translateY(0); }
-}
-
-header h1, .magic-button {
-    animation: move 1.5s infinite ease-in-out;
 }
