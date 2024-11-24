@@ -3,52 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mato Shop - Your Virtual Store</title>
+    <title>Mato Shop - Growtopia Style</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Mato Shop - Growtopia Style!</h1>
-        <p>Your best source for virtual items and upgrades!</p>
+        <div class="header-content">
+            <img src="https://www.growtopiagame.com/img/logo.png" alt="Mato Shop Logo" class="logo">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Store</a>
+                <a href="#">Community</a>
+                <a href="#">About</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="intro">
-            <h2>Welcome to the Mato Shop!</h2>
-            <p>Explore a world of colorful items and surprises!</p>
+        <section class="hero">
+            <h1>Welcome to Mato Shop!</h1>
+            <p>Your one-stop shop for amazing virtual items and upgrades!</p>
+            <button class="cta-btn">Shop Now</button>
         </section>
 
-        <section class="products">
+        <section class="featured-products">
             <h2>Featured Products</h2>
-            <div class="product-item">
-                <img src="https://via.placeholder.com/150" alt="Item 1">
-                <p>Item 1</p>
+            <div class="product-container">
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150" alt="Item 1">
+                    <h3>Item 1</h3>
+                    <p>Description of Item 1</p>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150" alt="Item 2">
+                    <h3>Item 2</h3>
+                    <p>Description of Item 2</p>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150" alt="Item 3">
+                    <h3>Item 3</h3>
+                    <p>Description of Item 3</p>
+                </div>
             </div>
-            <div class="product-item">
-                <img src="https://via.placeholder.com/150" alt="Item 2">
-                <p>Item 2</p>
-            </div>
-            <div class="product-item">
-                <img src="https://via.placeholder.com/150" alt="Item 3">
-                <p>Item 3</p>
-            </div>
-        </section>
-
-        <section class="interactive">
-            <h2>Experience Magic!</h2>
-            <p>Click the button below to create something amazing!</p>
-            <button class="magic-button">Make Magic!</button>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Mato Shop | All Rights Reserved</p>
     </footer>
-
-    <script>
-        document.querySelector(".magic-button").addEventListener("click", function() {
-            alert("You clicked the magic button! Welcome to Mato Shop!");
-        });
-    </script>
 </body>
 </html>

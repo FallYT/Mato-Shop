@@ -1,147 +1,162 @@
-/* Global Styles */
-body {
-    font-family: 'Courier New', monospace; /* Pixel-like font for a retro feel */
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
-    background: #00BFFF; /* Bright sky blue background */
-    color: #FFF;
-    text-align: center;
-    background-image: url('https://via.placeholder.com/1920x1080.png'); /* Add background image */
-    background-size: cover;
-    background-position: center;
+    box-sizing: border-box;
 }
 
-/* Header Styling */
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E8E8E8; /* Light grey background */
+    color: #333;
+    text-align: center;
+    line-height: 1.5;
+}
+
 header {
-    background-color: #FF6347; /* Tomato red background for header */
-    padding: 30px;
-    text-align: center;
-    font-size: 2.5rem;
+    background-color: #F1C40F; /* Growtopia-like yellow */
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+nav a {
     color: #FFF;
-    border-bottom: 10px solid #FFD700; /* Yellow border */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
-}
-
-header h1 {
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
-}
-
-header p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-
-/* Main Content */
-main {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6); /* Slight dark overlay */
-    border-radius: 15px;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 1200px;
-}
-
-/* Intro Section */
-.intro h2 {
-    color: #FF4500; /* Bright orange for section headers */
-    font-size: 2rem;
-}
-
-.intro p {
+    text-decoration: none;
+    margin: 0 15px;
     font-size: 1.1rem;
-    color: #FFD700; /* Gold color */
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 40px 20px;
+    background-color: #FFF; /* White background for content */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #2ECC71; /* Bright green, like Growtopia's color theme */
+    color: #FFF;
+    padding: 80px 0;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
-/* Product Section */
-.products {
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #FF6347; /* Red button */
+    color: white;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #FF4500;
+}
+
+/* Featured Products Section */
+.featured-products {
+    padding: 40px 20px;
+}
+
+.featured-products h2 {
+    font-size: 2.5rem;
+    color: #27AE60; /* Green text color */
+    margin-bottom: 20px;
+}
+
+.product-container {
     display: flex;
     justify-content: space-around;
+    gap: 20px;
     flex-wrap: wrap;
-    margin-top: 30px;
 }
 
 .product-item {
-    background-color: #FF1493; /* Deep pink background */
-    color: #FFF;
-    padding: 15px;
-    width: 200px;
-    height: 300px;
-    border-radius: 20px;
-    margin: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    animation: bounce 1s infinite alternate;
+    background-color: #F39C12; /* Yellow background for each item */
+    color: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
     text-align: center;
-}
-
-.product-item img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
-    border-radius: 10px;
 }
 
 .product-item:hover {
-    transform: scale(1.1);
-    background-color: #32CD32; /* Green when hovered */
+    transform: translateY(-10px);
 }
 
-.product-item:hover img {
-    transform: rotate(15deg); /* Rotate image */
+.product-item img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    border-radius: 10px;
 }
 
-/* Button Styles */
-.magic-button {
-    background-color: #FFD700; /* Gold color for the button */
-    color: white;
-    padding: 20px 40px;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    margin-top: 30px;
+.product-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
-.magic-button:hover {
-    transform: scale(1.1);
-    background-color: #FF6347; /* Tomato red when hovered */
+.product-item p {
+    font-size: 1rem;
 }
 
-.magic-button:active {
-    transform: scale(1);
-    background-color: #FF4500; /* Darker red when clicked */
-}
-
-/* Footer Styles */
+/* Footer */
 footer {
     background-color: #333;
     color: #FFF;
-    padding: 10px;
-    text-align: center;
+    padding: 20px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
 }
 
-/* Animation for Product Items */
-@keyframes bounce {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
+footer p {
+    font-size: 1rem;
 }
 
-/* Responsive Design for Smaller Screens */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .products {
+    .header-content {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
 
-    .product-item {
-        width: 250px;
-        height: 350px;
+    nav a {
+        margin: 10px 0;
+    }
+
+    .product-container {
+        flex-direction: column;
     }
 }
