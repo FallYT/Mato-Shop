@@ -1,14 +1,13 @@
-/* Reset some default styles */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #E8E8E8; /* Light grey background */
+    background-color: #E8E8E8;
     color: #333;
     text-align: center;
     line-height: 1.5;
@@ -46,7 +45,7 @@ nav a:hover {
 
 main {
     padding: 40px 20px;
-    background-color: #FFF; /* White background for content */
+    background-color: #FFF;
 }
 
 /* Hero Section */
@@ -145,8 +144,9 @@ footer p {
     font-size: 1rem;
 }
 
-/* Responsive Design */
+/* RESPONSIVE DESIGN FOR MOBILE */
 @media (max-width: 768px) {
+    /* Make header and logo stack vertically on smaller screens */
     .header-content {
         flex-direction: column;
         text-align: center;
@@ -156,7 +156,37 @@ footer p {
         margin: 10px 0;
     }
 
+    /* Adjust hero section */
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Adjust button */
+    .cta-btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+
+    /* Stack product items vertically for smaller screens */
     .product-container {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item {
+        width: 90%; /* Take full width on small screens */
+        margin-bottom: 20px;
+    }
+
+    footer {
+        font-size: 0.9rem;
     }
 }
