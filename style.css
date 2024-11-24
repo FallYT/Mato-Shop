@@ -1,94 +1,42 @@
-/* Resetting some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Grundläggande stil för hela sidan */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header-styling */
 header {
     background-color: #333;
-    color: #fff;
-    padding: 20px;
+    color: white;
     text-align: center;
+    padding: 20px;
 }
 
-header .logo h1 {
+h1 {
     font-size: 2.5rem;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+main {
+    padding: 20px;
 }
 
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Welcome section styling */
 .welcome {
     text-align: center;
-    padding: 50px;
-    background-color: #fff;
+    margin-bottom: 40px;
 }
 
-.welcome h2 {
-    font-size: 2rem;
-    color: #008cba;
-}
-
-.welcome p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-/* Product section styling */
 .products {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.products h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #008cba;
-}
-
-.product-list {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
 }
 
 .product-item {
+    text-align: center;
     background-color: #fff;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 200px;
-    text-align: center;
 }
 
 .product-item img {
@@ -96,22 +44,12 @@ nav ul li a:hover {
     border-radius: 8px;
 }
 
-.product-item p {
-    margin-top: 10px;
-    color: #333;
-}
-
-/* Footer styling */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
     text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
     position: fixed;
     width: 100%;
     bottom: 0;
-}
-
-footer p {
-    font-size: 1rem;
 }
